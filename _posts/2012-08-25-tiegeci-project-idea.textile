@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 项目原型设计一-----猜歌词？
+title: 项目原型设计一-----猜歌词
 category: proto
 ---
 
