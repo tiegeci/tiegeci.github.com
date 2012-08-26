@@ -28,24 +28,6 @@ category: proto
 是否会有扁项目经理的冲动？
 </blockquote>
 
-<script type="text/javascript">
-str = '<div class=wsd wsd_style="modern-blue" >';
-document.write(s);
-</script>
-
-<pre>
-
-Alice->Bob: Authentication Request
-Bob-->Alice: Authentication Response
-
-</pre>
-<script type="text/javascript">
-str = '</div>';
-document.write(s);
-</script>
-<script type="text/javascript" src="http://www.websequencediagrams.com/service.js"></script>
-
-
 
 要让人们对某一行业的态度发生转变，最好的方式就是从事该行业的人自己去证明。如果越来越多的程序员创造出了能够改善人们生活方方面面的应用，而且程序员不是简单地去实现，而是以主导者的身份出现，那时候人们对程序员的认识一定会比现在好不少。这就需要程序员不光要会写程序，还要具备创业家的心态，这并没有想像中的那么难，连那么复杂的程序都能搞定，还有什么是自己搞不定的？
 
