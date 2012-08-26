@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="description" content="freemind flash browser"/> 
+<meta name="keywords" content="freemind,flash"/> 
+<title>MINDMAPS</title> 
+<script type="text/javascript" src="flashobject.js"></script>  //ÉèÖÃflashobject.jsµÄÂ·¾¶
+<style type="text/css"> 
+     
+    /* hide from ie on mac \*/ 
+    html { 
+        height: 100%; 
+        overflow: hidden; 
+    } 
+     
+    #flashcontent { 
+        height: 100%; 
+    } 
+    /* end hide */ 
+
+    body { 
+        height: 100%; 
+        margin: 0; 
+        padding: 0; 
+    } 
+
+</style> 
+<script language="javascript"> 
+function giveFocus()  
+    {  
+      document.visorFreeMind.focus();   
+    } 
+</script></head> 
+<body onLoad="giveFocus();"> 
+     
+    <div id="flashcontent" onmouseover="giveFocus();"> 
+         Flash plugin or Javascript are turned off. 
+         Activate both  and reload to view the mindmap 
+    </div> 
+     
+    <script type="text/javascript"> 
+        // <![CDATA[ 
+        // for allowing using http://.....?mindmap.mm mode 
+        function getMap(map){ 
+          var result=map; 
+          var loc=document.location+''; 
+          if(loc.indexOf(".mm")>0 && loc.indexOf("?")>0){ 
+            result=loc.substring(loc.indexOf("?")+1); 
+          } 
+          return result; 
+        } 
+        var fo = new FlashObject("visorFreemind.swf", "visorFreeMind", "100%", "100%", 6, "#ffffff");  // ÉèÖÃFreeMind Browser µÄÎÄ¼þÂ·¾¶¼°ÏÔÊ¾´óÐ¡¡¢±³¾°ÑÕÉ«
+        fo.addParam("quality", "high"); 
+        fo.addParam("bgcolor", "#ffffff");  //ÍøÒ³±³¾°ÑÕÉ«
+        fo.addVariable("openUrl", "_blank"); 
+        fo.addVariable("startCollapsedToLevel","3"); // ÉèÖÃÏÔÊ¾µÄÄ¬ÈÏ½á¹¹²ã¼¶
+        fo.addVariable("maxNodeWidth","200"); 
+        // 
+        fo.addVariable("mainNodeShape","elipse"); 
+        fo.addVariable("justMap","false");  // ÉèÖÃÊÇ·ñÏÔÊ¾¹¤¾ß°´Å¥
+        fo.addVariable("initLoadFile",getMap("Readme.mm")); // ÉèÖÃÄÔÍ¼ÎÄ¼þÂ·¾¶
+        fo.addVariable("defaultToolTipWordWrap",200); 
+        fo.addVariable("offsetX","center");  // ÉèÖÃÄÔÍ¼×óÓÒ¶ÔÆë·½Ê½
+        fo.addVariable("offsetY","0");  // ÉèÖÃÄÔÍ¼ÉÏÏÂ¶ÔÆë·½Ê½
+        fo.addVariable("buttonsPos","top");  // ÉèÖÃ¹¤¾ß°´Å¥¶ÔÆë·½Ê½
+        fo.addVariable("min_alpha_buttons",20);  // ÉèÖÃ¹¤¾ß°´Å¥×îµÍÍ¸Ã÷¶È
+        fo.addVariable("max_alpha_buttons",100);  // ÉèÖÃ¹¤¾ß°´Å¥×î¸ßÍ¸Ã÷¶È
+        fo.addVariable("scaleTooltips","false");         
+        fo.write("flashcontent"); 
+        // ]]> 
+    </script> 
+</body> 
+</html> 
