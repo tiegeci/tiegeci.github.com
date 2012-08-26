@@ -28,16 +28,21 @@ category: proto
 是否会有扁项目经理的冲动？
 </blockquote>
 
+<script type="text/javascript">
+str = '<div class=wsd wsd_style="modern-blue" >';
+document.write(s);
+</script>
 
-
-<table class=wsd wsd_style="modern-blue" >
 <pre>
 
 Alice->Bob: Authentication Request
 Bob-->Alice: Authentication Response
 
 </pre>
-</table>
+<script type="text/javascript">
+str = '</div>';
+document.write(s);
+</script>
 <script type="text/javascript" src="http://www.websequencediagrams.com/service.js"></script>
 
 
