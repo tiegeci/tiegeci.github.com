@@ -28,7 +28,7 @@ category: proto
 是否会有扁项目经理的冲动？
 </blockquote>
 
-<table id="flashcontent" onmouseover="giveFocus();">
+<table width="100%" id="flashcontent" onmouseover="giveFocus();">
 <script type="text/javascript"> 
         // <![CDATA[ 
         // for allowing using http://.....?mindmap.mm mode 
