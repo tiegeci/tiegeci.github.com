@@ -39,7 +39,7 @@ category: proto
           } 
           return result; 
         } 
-        var fo = new FlashObject("freemind/visorFreemind.swf", "visorFreeMind", "100%", "100%", 6, "#ffffff");  // 设置FreeMind Browser 的文件路径及显示大小、背景颜色
+        var fo = new FlashObject("/freemind/visorFreemind.swf", "visorFreeMind", "100%", "100%", 6, "#ffffff");  // 设置FreeMind Browser 的文件路径及显示大小、背景颜色
         fo.addParam("quality", "high"); 
         fo.addParam("bgcolor", "#ffffff");  //网页背景颜色
         fo.addVariable("openUrl", "_blank"); 
@@ -48,7 +48,7 @@ category: proto
         // 
         fo.addVariable("mainNodeShape","elipse"); 
         fo.addVariable("justMap","false");  // 设置是否显示工具按钮
-        fo.addVariable("initLoadFile",getMap("freemind/Readme.mm")); // 设置脑图文件路径
+        fo.addVariable("initLoadFile",getMap("/freemind/Readme.mm")); // 设置脑图文件路径
         fo.addVariable("defaultToolTipWordWrap",200); 
         fo.addVariable("offsetX","center");  // 设置脑图左右对齐方式
         fo.addVariable("offsetY","0");  // 设置脑图上下对齐方式
