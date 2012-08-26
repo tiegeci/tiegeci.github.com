@@ -28,13 +28,37 @@ category: proto
 是否会有扁项目经理的冲动？
 </blockquote>
 
-
-<embed src="/image/visorFreemind.swf" 
-        width="100%" type="application/x-shockwave-flash" 
-        align="middle" height="500" bgcolor="#FFFFFF" 
-        quality="high" 
-        flashvars="openUrl=_blank&initLoadFile=/image/mx.mm&startCollapsedToLevel=5" />
-
+<script type="text/javascript"> 
+        // <![CDATA[ 
+        // for allowing using http://.....?mindmap.mm mode 
+        function getMap(map){ 
+          var result=map; 
+          var loc=document.location+''; 
+          if(loc.indexOf(".mm")>0 && loc.indexOf("?")>0){ 
+            result=loc.substring(loc.indexOf("?")+1); 
+          } 
+          return result; 
+        } 
+        var fo = new FlashObject("freemind/visorFreemind.swf", "visorFreeMind", "100%", "100%", 6, "#ffffff");  // 设置FreeMind Browser 的文件路径及显示大小、背景颜色
+        fo.addParam("quality", "high"); 
+        fo.addParam("bgcolor", "#ffffff");  //网页背景颜色
+        fo.addVariable("openUrl", "_blank"); 
+        fo.addVariable("startCollapsedToLevel","3"); // 设置显示的默认结构层级
+        fo.addVariable("maxNodeWidth","200"); 
+        // 
+        fo.addVariable("mainNodeShape","elipse"); 
+        fo.addVariable("justMap","false");  // 设置是否显示工具按钮
+        fo.addVariable("initLoadFile",getMap("freemind/Readme.mm")); // 设置脑图文件路径
+        fo.addVariable("defaultToolTipWordWrap",200); 
+        fo.addVariable("offsetX","center");  // 设置脑图左右对齐方式
+        fo.addVariable("offsetY","0");  // 设置脑图上下对齐方式
+        fo.addVariable("buttonsPos","top");  // 设置工具按钮对齐方式
+        fo.addVariable("min_alpha_buttons",20);  // 设置工具按钮最低透明度
+        fo.addVariable("max_alpha_buttons",100);  // 设置工具按钮最高透明度
+        fo.addVariable("scaleTooltips","false");         
+        fo.write("flashcontent"); 
+        // ]]> 
+    </script> 
 
 要让人们对某一行业的态度发生转变，最好的方式就是从事该行业的人自己去证明。如果越来越多的程序员创造出了能够改善人们生活方方面面的应用，而且程序员不是简单地去实现，而是以主导者的身份出现，那时候人们对程序员的认识一定会比现在好不少。这就需要程序员不光要会写程序，还要具备创业家的心态，这并没有想像中的那么难，连那么复杂的程序都能搞定，还有什么是自己搞不定的？
 
