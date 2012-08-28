@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 项目原型设计(3)——音乐识别和歌词识别(移动APP)
+title: 项目原型设计(4)——音乐识别和歌词识别(移动APP)
 category: proto
 ---
 <blockquote>
