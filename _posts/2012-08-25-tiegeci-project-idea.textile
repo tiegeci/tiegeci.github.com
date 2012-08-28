@@ -2,7 +2,7 @@
 layout: post
 title: 项目原型设计(1)——-猜歌词
 category: proto
--
+---
 主要功能：随机选出一段歌词（可以由用户指定是某一个歌星），让多个用户猜，猜中者为胜
 参考模型:http://game.weibo.com/nihuawocai/
 新浪app： http://apps.weibo.com/caidianying
