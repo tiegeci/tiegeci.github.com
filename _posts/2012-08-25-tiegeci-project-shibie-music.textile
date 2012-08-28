@@ -3,9 +3,9 @@ layout: post
 title: 项目原型设计(3)——音乐识别和歌词识别(移动APP)
 category: proto
 ---
-<quote>
+<blockquote>
 是否觉得昨晚在酒吧听到的那首歌很赞，但记不起歌名？只会哼哼？这时你可以掏出手机打开Shazam，然后把大致的旋律哼出来，然后它就可以告诉你歌名。
 
 但如果你觉得这还不够过瘾的话，收费版Shazam今天推出的另一个功能会让你合不拢嘴：LyricPlay，不仅能听懂你的歌，还能同步显示歌词。目前支持iPhone和iPod touch。
 
-</quote>
+</blockquote>
