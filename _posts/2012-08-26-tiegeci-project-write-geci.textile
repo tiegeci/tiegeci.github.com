@@ -1,0 +1,6 @@
+---
+layout: post
+title: 项目原型设计(3)——-贴歌词(一句歌词表达心情)
+category: proto
+---
+<image src="/image/JingMusic.png" />
