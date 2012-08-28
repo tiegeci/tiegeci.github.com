@@ -1,7 +1,9 @@
 ---
 layout: post
-title: 项目原型设计(1)-----猜歌词
+title: 项目原型设计(2)-----猜歌词（你画我猜）
 category: proto
 ---
-主要功能：随机选出一段歌词（可以由用户指定是某一个歌星），让多个用户猜，猜中者为胜
-参考模型:http://iguess.me/movie
+主要功能：由系统产生随机选出一段歌词（可以由用户指定是某一个歌星），两个随机用户（或者是一个讨论组），一个人可以哼唱，也可以做图
+参考模型:http://game.weibo.com/nihuawocai/
+<image src="/image/nihuawocai.png"/>
+既可以作成网页形式，也可以作成sina app,或者是手机app供一块聚会玩游戏使用。
